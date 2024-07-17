@@ -24,24 +24,46 @@ const SkillBar = () => {
         { name: 'CapCut', value: 65 },
         { name: 'Design Theory', value: 100 }
     ]
+
+    const image = {
+        hidden: { opacity: 0 },
+        visible: { opacity: 1, transition: { duration: 3, } }
+    }
+
+
+
+
     return (
-        <div className="skill-bar-container">
-            <img src='skills.gif' className='absolute left-0 top-0'/>
-            {skills.map((skill) => (
-                <div key={skill.name} className="skill-bar">
-                    <div className="skill-bar-label">{skill.name}</div>
-                    <div className="skill-bar-value-container">
-                        <motion.div
-                            className="skill-bar-value"
-                            initial={{ width: 0 }}
-                            animate={{ width: `${skill.value}%` }}
-                            transition={{ duration: 1 }}
-                        ></motion.div>
+        <motion.div initial="hidden" animate="visible" className='relative'>
+            {/* <img src='skillbg.gif' className='absolute left-0 top-0 opacity-15 w-full rounded-xl -z-10' /> */}
+
+            <div className='flex justify-between w-full items-center px-20 gap-5 bg-gray-900'>
+                <motion.img src='skills.gif' className='w-40' variants={image} />
+                <p className='text-xl font-bold text-white bg-gray-900 p-3 rounded-lg'>
+                    I am highly confident in the technical skills listed below:
+                    In addition to my technical expertise, I am also a strong communicator within team environments, ensuring effective collaboration and project success.
+
+                </p>
+            </div>
+
+            <div className="skill-bar-container">
+
+                {skills.map((skill) => (
+                    <div key={skill.name} className="skill-bar">
+                        <div className="skill-bar-label">{skill.name}</div>
+                        <div className="skill-bar-value-container">
+                            <motion.div
+                                className="skill-bar-value"
+                                initial={{ width: 0 }}
+                                animate={{ width: `${skill.value}%` }}
+                                transition={{ duration: 1 }}
+                            ></motion.div>
+                        </div>
+                        <div className="skill-bar-value-text">{skill.value}%</div>
                     </div>
-                    <div className="skill-bar-value-text">{skill.value}%</div>
-                </div>
-            ))}
-        </div>
+                ))}
+            </div>
+        </motion.div>
     );
 };
 

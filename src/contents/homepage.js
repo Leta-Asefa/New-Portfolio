@@ -13,8 +13,8 @@ const HomePage = () => {
         visible: { y: 0, transition: { duration: 2 } }
     }
     const intro1 = {
-        hidden: { x: "-100vw" },
-        visible:{x:0, transition:{duration:1,delay:0}},
+        hidden: { y: "-100vh",x:1280 },
+        visible:{y:0,x:0, transition:{duration:1,delay:0}},
     }
     const intro2 = {
         hidden: { x: "-100vw" },
@@ -46,7 +46,7 @@ const HomePage = () => {
         >
 
             <motion.div className="homepage-left"  >
-                <motion.div  variants={intro1} className="text-4xl font-bold mb-6"><img src='welcome.svg' className='w-30 h-30' /> </motion.div>
+                <motion.div  variants={intro1} className="text-4xl font-bold mb-3"><img src='welcome.svg' className='w-28 h-28' /> </motion.div>
                 <motion.div variants={intro2} className='text-8xl font-extrabold mb-6' >Leta Asefa</motion.div>
                 <motion.div  variants={intro3}  className='text-4xl mb-6' >
                     I'm a
@@ -75,11 +75,11 @@ const HomePage = () => {
 
                 <motion.img variants={backgroundImage} src='OpO5.gif' className='mx-auto transofrm scale-x-150  opacity-100 ' />
 
-                <motion.div className='absolute top-0 left-0 '>
+                <motion.div className='absolute top-0 left-0 mx-auto w-full'>
 
-                    <motion.img src='profilepic.svg' className='mx-auto w-96 z-20  rounded-full' variants={image} />
+                    <motion.img src='profilepic.svg' className='mx-auto w-80 z-20  rounded-full' variants={image} />
 
-                    <h1 className='text-center font-extrabold text-xl p-1 bg-orange-200 rounded-lg' >
+                    <h1 className='text-center font-extrabold text-lg p-1 bg-orange-200 rounded-lg' >
                         " Make every detail perfect and limit the number of details to perfect "
                     </h1>
                     <h1 className='text-center'>Jack Dorsey</h1>

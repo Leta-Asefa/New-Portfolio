@@ -31,16 +31,16 @@
     @apply grid grid-cols-2 ;
 }
 .homepage-left{
-    @apply bg-gray-50  p-20 z-50;
+    @apply bg-gray-50  p-20 pt-16 z-50;
 }
 .homepage-right{
     @apply  relative;
 }
 
 /* -----------------------------------------------Skills----------------------------------------------------- */
-/* SkillBar.css */
+
 .skill-bar-container {
-    @apply w-full mx-auto grid grid-cols-2 pt-10 p-20 gap-x-10 bg-gray-50 relative;
+    @apply w-full mx-auto grid grid-cols-2 pt-10 p-20 gap-x-10 bg-white bg-opacity-50 relative;
   }
   
   .skill-bar {
@@ -56,10 +56,56 @@
   }
   
   .skill-bar-value {
-    @apply h-3 bg-gray-800 rounded-l;
+    @apply h-3 bg-gray-900 rounded-l;
   }
   
   .skill-bar-value-text {
     @apply w-12 text-right ml-2;
   }
+
+  /* -------------------------------Call To Action--------------------------------------------------------------------- */
+.cta-section {
+  @apply bg-gray-900 text-white py-12;
+}
+
+.cta-container {
+  @apply container mx-auto text-center;
+}
+
+.cta-heading {
+  @apply text-3xl font-bold mb-4;
+}
+
+.cta-text {
+  @apply text-lg mb-8;
+}
+
+.cta-buttons {
+  @apply flex justify-center space-x-4;
+}
+
+.cta-button {
+  @apply bg-primary text-black font-semibold px-6 py-3 rounded-md cursor-pointer hover:scale-105;
+}
+/* --------------------------------Scroll Bar----------------------------------------------------------------------------------- */
+/* styles.css */
+
+.scrollbar-custom::-webkit-scrollbar {
+  height: 12px; /* Adjust scrollbar height */
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Scrollbar track color */
+  border-radius: 10px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: #888; /* Scrollbar thumb color */
+  border-radius: 10px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Scrollbar thumb hover color */
+}
+
   
