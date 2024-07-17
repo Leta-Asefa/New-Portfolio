@@ -1,13 +1,15 @@
 import HomePage from "./contents/homepage";
+import SkillBar from "./contents/skills";
 import Navbar from "./partials/navbar";
 
 function App() {
   return (
-    <>
-    <Navbar />
-    <HomePage />
-  </>
-    
+    <div>
+      <Navbar />
+      <HomePage />
+      <SkillBar />
+    </div>
+
   );
 }
 
