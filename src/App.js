@@ -1,4 +1,5 @@
 import CallToAction from "./contents/downloadresume";
+import Education from "./contents/education";
 import Experiences from "./contents/experience";
 import HomePage from "./contents/homepage";
 import Project from "./contents/projects";
@@ -13,7 +14,8 @@ function App() {
       <SkillBar />
       <CallToAction />
       <Project />
-      <Experiences/>
+      <Experiences />
+      <Education/>
     </div>
 
   );
