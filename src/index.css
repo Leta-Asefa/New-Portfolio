@@ -87,8 +87,11 @@
 .cta-button {
   @apply bg-primary text-black font-semibold px-6 py-3 rounded-md cursor-pointer hover:scale-105;
 }
-/* --------------------------------Scroll Bar----------------------------------------------------------------------------------- */
+/* --------------------------------Project & Scroll Bar----------------------------------------------------------------------------------- */
 /* styles.css */
+.project-big-container{
+  @apply flex gap-16 overflow-x-scroll   scrollbar-custom bg-transparent bg-white opacity-100 px-20 pt-5 pb-2
+}
 
 .scrollbar-custom::-webkit-scrollbar {
   height: 12px; /* Adjust scrollbar height */
@@ -107,5 +110,23 @@
 .scrollbar-custom::-webkit-scrollbar-thumb:hover {
   background: #555; /* Scrollbar thumb hover color */
 }
+/* ----------------------------------------Contacts -------------------------------------------------- */
+.contact-form {
+  @apply bg-white text-black py-8 pr-20;
+}
+
+.input-field {
+  @apply px-3 py-2 bg-gray-300 border  rounded-md shadow-sm focus:outline-none ;
+}
+
+.textarea-field {
+  @apply px-3 py-2 bg-gray-300 border  rounded-md shadow-sm focus:outline-none ;
+}
+
+.submit-button {
+  @apply px-4 py-2 bg-primary hover:bg-orange-500 text-black font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500;
+}
+
+
 
   

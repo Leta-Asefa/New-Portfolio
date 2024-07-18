@@ -39,6 +39,7 @@ const HomePage = () => {
 
     return (
         <motion.div
+            id='homepage'
             className="homepage"
             variants={container}
             initial="hidden"
@@ -63,11 +64,11 @@ const HomePage = () => {
                 <motion.p  variants={intro4}  className='text-lg mb-3'> Discover my diverse portfolio! With a wealth of personal projects and internship programs under my belt, I've gathered extensive experience in software development. I assure you that my skills are guaranteed to meet your satisfaction.
                 </motion.p>
                 <motion.div  variants={intro5}  className='flex justify-between bg-blue-50 p-2 rounded-lg'>
-                    <img src='github-142-svgrepo-com.svg' className='w-8 h-8' />
-                    <img src='linkedin-svgrepo-com.svg' className='w-8 h-8' />
-                    <img src='telegram-svgrepo-com.svg' className='w-8 h-8' />
-                    <img src='gmail-svgrepo-com.svg' className='w-8 h-8' />
-                    <img src='tiktok.svg' className='w-8 h-8' />
+                   <a href='https://github.com/Leta-Asefa'><img src='github-142-svgrepo-com.svg' className='w-8 h-8' /></a> 
+                   <a href='https://www.linkedin.com/in/leta-asefa/'><img src='linkedin-svgrepo-com.svg' className='w-8 h-8' /></a>
+                   <a href='https://t.me/letaasefa'><img src='telegram-svgrepo-com.svg' className='w-8 h-8' /></a>
+                   <a href='mailto:letaassefa7@gmail.com'><img src='gmail-svgrepo-com.svg' className='w-8 h-8' /></a>
+                   <a href=''><img src='tiktok.svg' className='w-8 h-8' /></a>
                 </motion.div>
             </motion.div>
 

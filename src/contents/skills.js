@@ -34,7 +34,7 @@ const SkillBar = () => {
 
 
     return (
-        <motion.div initial="hidden" animate="visible" className='relative'>
+        <motion.div id='skill' initial="hidden" animate="visible" className='relative'>
             {/* <img src='skillbg.gif' className='absolute left-0 top-0 opacity-15 w-full rounded-xl -z-10' /> */}
 
             <div className='flex justify-between w-full items-center px-20 gap-5 bg-gray-900'>
