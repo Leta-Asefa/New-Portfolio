@@ -1,4 +1,6 @@
+import { motion } from 'framer-motion';
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 
 const Project = () => {
 
@@ -75,12 +77,19 @@ const Project = () => {
         }
     ];
 
-
+    const { ref, inView } = useInView({
+        triggerOnce: false, // Ensures animation only happens once
+        threshold: 0.4, // Defines how much of the element is visible before triggering
+    });
 
 
     return (
 
-        <div id='project' className='project-big-container'>
+        <motion.div id='project'
+            ref={ref}
+            animate={{ opacity: inView ? 1 : 0 }}
+            transition={{ duration: 1 }}
+            className='project-big-container'>
 
             <h2 className='flex-none w-96 text-center text-3xl text-secondary'>
                 <h1 className='font-bold text-secondary bg-primary p-2 rounded-md text-5xl'>PROJECTS</h1>
@@ -128,7 +137,7 @@ const Project = () => {
             }
 
 
-        </div>
+        </motion.div>
     );
 };
 

@@ -32,6 +32,10 @@ const Navbar = () => {
                         <img src='experiences.svg' className='navbar-links-img' />
                         <h1>Experiences</h1>
                     </a>
+                    <a href="#education" className="navbar-link">
+                        <img src='education.svg' className='navbar-links-img' />
+                        <h1>Education</h1>
+                    </a>
                     <a href="#testimonial" className="navbar-link">
                         <img src='testimonials.svg' className='navbar-links-img' />
                         <h1>Testimonials</h1>

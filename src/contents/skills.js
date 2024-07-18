@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const SkillBar = () => {
     const skills = [
@@ -30,15 +31,22 @@ const SkillBar = () => {
         visible: { opacity: 1, transition: { duration: 3, } }
     }
 
-
+    const { ref, inView } = useInView({
+        triggerOnce: false, // Ensures animation only happens once
+        threshold: 0.4, // Defines how much of the element is visible before triggering
+    });
 
 
     return (
-        <motion.div id='skill' initial="hidden" animate="visible" className='relative'>
-            {/* <img src='skillbg.gif' className='absolute left-0 top-0 opacity-15 w-full rounded-xl -z-10' /> */}
+        <motion.div id='skill' 
+                                ref={ref}
+                                animate={{ opacity: inView ? 1 : 0 }}
+                                transition={{ duration: 1.3 }}
+                                className='relative'
+        >
 
             <div className='flex justify-between w-full items-center px-20 gap-5 bg-gray-900'>
-                <motion.img src='skills.gif' className='w-40' variants={image} />
+                <motion.img src='skills.gif' className='w-40' variants={image} animate='visible' />
                 <p className='text-xl font-bold text-white bg-gray-900 p-3 rounded-lg'>
                     I am highly confident in the technical skills listed below:
                     In addition to my technical expertise, I am also a strong communicator within team environments, ensuring effective collaboration and project success.

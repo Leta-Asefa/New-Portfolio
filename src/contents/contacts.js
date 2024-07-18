@@ -1,3 +1,8 @@
+import { motion } from 'framer-motion';
+import React from 'react';
+import { useInView } from 'react-intersection-observer';
+
+
 const Contacts = () => {
     const contacts = [
         {
@@ -16,12 +21,22 @@ const Contacts = () => {
             image: "tiktok.svg",
             link: "https://t.me/letaasefa"
         }
-        
-        
-        
     ]
+
+
+    const { ref, inView } = useInView({
+        triggerOnce: false, // Ensures animation only happens once
+        threshold: 0.3, // Defines how much of the element is visible before triggering
+    });
+
+
+
     return (
-        <div id="contact">
+        <motion.div id="contact"        
+        ref={ref}
+        animate={{ opacity: inView ? 1 : 0 }}
+        transition={{ duration: 1 }}
+       >
             <div className="grid grid-cols-2">
 
                 <div className="">
@@ -33,7 +48,7 @@ const Contacts = () => {
 
                                 <div>
                                 
-                                    <h3 className="text-xl font-semibold flex gap-2 mt-3"><img src="address.svg" className="w-6 h-6"/><p>Address</p></h3>
+                                    <h3 className="text-xl font-semibold flex gap-2 mt-3"><img src="address.svg" className="w-6 h-6"/><p> Address</p></h3>
                                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ethiopia | Addis Ababa</p>
                                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bole - Gurdshola</p>
                                 </div>
@@ -102,7 +117,7 @@ const Contacts = () => {
                 <img src="logo.svg" className="w-10 h-10 inline"></img>
                 <p> &copy; 2024 Leta Asefa (SiliconTech). All rights reserved.</p>
             </p>
-        </div>
+        </motion.div>
     );
 }
 

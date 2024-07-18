@@ -10,7 +10,7 @@
 }
 
 .navbar {
-    @apply bg-primary p-2 text-white w-full;
+    @apply bg-primary p-2 text-white w-full sticky left-0 top-0 z-50;
 }
 
 .navbar-brand {
@@ -31,10 +31,10 @@
     @apply grid grid-cols-2 ;
 }
 .homepage-left{
-    @apply bg-gray-50  p-20 pt-16 z-50;
+    @apply bg-gray-50  p-20 pt-16 z-40;
 }
 .homepage-right{
-    @apply  relative;
+    @apply  relative z-30;
 }
 
 /* -----------------------------------------------Skills----------------------------------------------------- */
@@ -90,7 +90,7 @@
 /* --------------------------------Project & Scroll Bar----------------------------------------------------------------------------------- */
 /* styles.css */
 .project-big-container{
-  @apply flex gap-16 overflow-x-scroll   scrollbar-custom bg-transparent bg-white opacity-100 px-20 pt-5 pb-2
+  @apply flex gap-16 overflow-x-scroll   scrollbar-custom bg-transparent bg-white opacity-100 px-20 pt-20 pb-2 ;
 }
 
 .scrollbar-custom::-webkit-scrollbar {
