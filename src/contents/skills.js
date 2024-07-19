@@ -45,13 +45,13 @@ const SkillBar = () => {
                                 className='relative'
         >
 
-            <div className='flex justify-between w-full items-center px-20 gap-5 bg-gray-900'>
-                <motion.img src='skills.gif' className='w-40' variants={image} animate='visible' />
-                <p className='text-xl font-bold text-white bg-gray-900 p-3 rounded-lg'>
+            <div className='md:flex md:justify-between w-full items-center px-0 gap-5 bg-gray-900'>
+                <p className='text-xl font-bold text-white bg-gray-900 p-4 md:pl-20 rounded-lg'>
                     I am highly confident in the technical skills listed below:
                     In addition to my technical expertise, I am also a strong communicator within team environments, ensuring effective collaboration and project success.
 
                 </p>
+                <motion.img src='skills.gif' className='md:w-32' variants={image} animate='visible' />
             </div>
 
             <div className="skill-bar-container">

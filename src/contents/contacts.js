@@ -37,12 +37,12 @@ const Contacts = () => {
         animate={{ opacity: inView ? 1 : 0 }}
         transition={{ duration: 1 }}
        >
-            <div className="grid grid-cols-2">
+            <div className="grid md:grid-cols-2 ">
 
                 <div className="">
-                    <div className="bg-white text-black pl-20 py-8">
+                    <div className="bg-white text-black md:pl-20 md:py-8 p-4">
                         <div className="container mx-auto px-4">
-                            <h2 className="text-2xl font-bold mb-3">Contact Me</h2>
+                            <h2 className="text-2xl font-bold mb-3 md:text-left text-center">Contact Me</h2>
                             <p>I welcome your ideas and discussions. Feel free to connect with me. I'm eager to engage in meaningful conversations with you!</p>
                             <div className="flex flex-col space-y-2">
 
@@ -113,9 +113,9 @@ const Contacts = () => {
 
 
             </div>
-            <p className="text-center mt-4 px-20 py-7 bg-primary font-bold flex gap-5 items-center justify-center">
+            <p className="text-center mt-4 md:px-20 p-4 py-7 bg-primary font-bold flex md:gap-5 gap-2 items-center justify-center">
                 <img src="logo.svg" className="w-10 h-10 inline"></img>
-                <p> &copy; 2024 Leta Asefa (SiliconTech). All rights reserved.</p>
+                <p> &copy; 2024 Leta Asefa (TrendyTech). All rights reserved.</p>
             </p>
         </motion.div>
     );

@@ -34,18 +34,18 @@ const Testimonials = () => {
             animate={{ opacity: inView ? 1 : 0 }}
             transition={{ duration: 1 }}
             className='bg-gray-900 h-auto mt-10'>
-            <h1 className='text-secondary text-center bg-primary p-2 mb-5 text-5xl font-bold '>Testimonials</h1>
+            <h1 className='text-gray-800 text-center bg-primary p-2 mb-5 text-5xl font-bold '>Testimonials</h1>
 
-            <div className='flex justify-between px-20 py-10 gap-8'>
+            <div className='md:flex md:justify-between md:px-20 md:py-10 md:gap-8  p-4'>
 
 
                 {testimonials.map((testimonial) => {
-                    return <div className=' text-white'>
-                        <img src={testimonial.image} className='w-32 rounded-lg' />
+                    return <div className=' text-white md:mb-0 md:text-left  mb-5 text-center'>
+                        <img src={testimonial.image} className='w-32 rounded-lg mx-auto md:mx-0' />
                         <h1 className='text-lg mb-2'>{testimonial.text}</h1>
                         <h2 className='text-lg font-semibold'>{testimonial.name}</h2>
                         <h1 className='text-sm'>Software Developer</h1>
-                        <div className='flex gap-2 justify-start items-center'>
+                        <div className='flex gap-2 md:justify-start  justify-center items-center'>
                             <img src='linkedin-svgrepo-com.svg' className='w-8 h-8' />
                             <img src='github-142-svgrepo-comwhite.svg' className='w-6 h-6' />
                         </div>

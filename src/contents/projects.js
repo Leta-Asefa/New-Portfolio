@@ -91,9 +91,9 @@ const Project = () => {
             transition={{ duration: 1 }}
             className='project-big-container'>
 
-            <h2 className='flex-none w-96 text-center text-3xl text-secondary'>
-                <h1 className='font-bold text-secondary bg-primary p-2 rounded-md text-5xl'>PROJECTS</h1>
-                <div className='text-sm mt-5 relative'>
+            <h2 className='flex-none w-96 text-center text-3xl text-secondary pr-3 md:pr-0'>
+                <h1 className='font-bold text-gray-800 bg-primary p-2 rounded-md text-3xl'>PROJECTS</h1>
+                <div className='text-sm mt-5 relative '>
                     <p>As a Fullstack Developer, I've completed real-world projects and developed various personal and internship projects throughout my career, gaining diverse experience in both professional and personal development environments.</p>
                     <br></br>
                     <img src='projects.gif' className='w-96' />

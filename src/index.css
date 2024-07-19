@@ -18,7 +18,7 @@
 }
 
 .navbar-links {
-    @apply flex space-x-6;
+    @apply  flex-col md:flex-row md:flex space-x-6; 
 }
 
 .navbar-link {
@@ -28,19 +28,19 @@
  @apply w-5 h-5;
 }
 .homepage {
-    @apply grid grid-cols-2 ;
+    @apply md:grid md:grid-cols-2 ;
 }
 .homepage-left{
-    @apply bg-gray-50  p-20 pt-16 z-40;
+    @apply bg-gray-50  p-8 md:p-20 pt-7 md:pt-16  z-40;
 }
 .homepage-right{
-    @apply  relative z-30;
+    @apply  relative z-30 mb-56 md:mb-24 lg:mb-0;
 }
 
 /* -----------------------------------------------Skills----------------------------------------------------- */
 
 .skill-bar-container {
-    @apply w-full mx-auto grid grid-cols-2 pt-10 p-20 gap-x-10 bg-white bg-opacity-50 relative;
+    @apply w-full mx-auto md:grid md:grid-cols-2 pt-10 p-4 md:p-20 md:gap-x-10 gap-x-4 bg-white bg-opacity-50 relative;
   }
   
   .skill-bar {
@@ -48,7 +48,7 @@
   }
   
   .skill-bar-label {
-    @apply w-32 text-left mr-5 font-bold;
+    @apply w-24 md:w-32 text-left mr-2 md:mr-5 font-bold;
   }
   
   .skill-bar-value-container {
@@ -85,12 +85,12 @@
 }
 
 .cta-button {
-  @apply bg-primary text-black font-semibold px-6 py-3 rounded-md cursor-pointer hover:scale-105;
+  @apply bg-white text-black font-semibold px-6 py-3 rounded-md cursor-pointer hover:scale-105;
 }
 /* --------------------------------Project & Scroll Bar----------------------------------------------------------------------------------- */
 /* styles.css */
 .project-big-container{
-  @apply flex gap-16 overflow-x-scroll   scrollbar-custom bg-transparent bg-white opacity-100 px-20 pt-20 pb-2 ;
+  @apply flex gap-16 overflow-x-scroll   scrollbar-custom bg-transparent bg-white opacity-100 md:px-20 md:pt-20 md:pb-2 md:mt-0 mt-5;
 }
 
 .scrollbar-custom::-webkit-scrollbar {
@@ -112,7 +112,7 @@
 }
 /* ----------------------------------------Contacts -------------------------------------------------- */
 .contact-form {
-  @apply bg-white text-black py-8 pr-20;
+  @apply bg-white text-black md:py-8 md:pr-20 p-4;
 }
 
 .input-field {

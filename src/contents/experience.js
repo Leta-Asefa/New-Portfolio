@@ -12,7 +12,7 @@ const Experiences = () => {
 
     const { ref, inView } = useInView({
         triggerOnce: false, // Ensures animation only happens once
-        threshold: 0.5, // Defines how much of the element is visible before triggering
+        threshold: 0.3, // Defines how much of the element is visible before triggering
     });
 
 
@@ -20,26 +20,30 @@ const Experiences = () => {
         <motion.div ref={ref}
             animate={{ opacity: inView ? 1 : 0 }}
             transition={{ duration: 1 }}
-            id='experience' className="flex items-center justify-between mt-6 p-20 bg-gray-50">
+            id='experience'
+            className="md:flex md:items-center md:justify-between flex-col md:flex-row mt-6 md:p-20 bg-gray-50">
+            
+
+            <h1 className='flex-1 text-center text-5xl font-bold text-gray-800  self-baseline'><h1 className='bg-primary p-2 text-3xl rounded-md'>EXPERIENCES</h1><br></br><br></br>
+                <p className='text-sm font-semibold'>I have worked in these companies either as an employee or an inter.</p>
+                <img src='work.png' className='mx-auto rounded-lg w-40' />
+            </h1>
             
 
             {jobs.map((job, index) => (
                 <div key={index} className="flex items-center">
 
-                    <div className="ml-4">
+                    <div className="md:ml-4 p-4">
                         <h3 className="font-semibold">{job.title}</h3>
                         <p className="text-lg font-bold text-gray-600 ">{job.company}</p>
                         <p className="text-sm text-gray-600">{job.position}</p>
                         <p className="text-sm text-gray-700">{job.startDate} - {job.endDate}</p>
-                        <img src={job.image} className='w-40 rounded-lg mt-3' />
+                        <img src={job.image} className='mx-auto md:mx-0 md:w-40 w-96 rounded-lg mt-3' />
                     </div>
                 </div>
             ))}
 
-            <h1 className='text-center text-5xl font-bold text-secondary  self-baseline'><span className='bg-primary p-2 text-5xl rounded-md'>EXPERIENCES</span><br></br><br></br>
-                <p className='text-sm font-semibold'>I have worked in these companies either as an employee or an inter.</p>
-                <img src='work.png' className='mx-auto rounded-lg w-40' />
-            </h1>
+           
 
         </motion.div>
     );

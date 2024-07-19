@@ -33,8 +33,8 @@ const HomePage = () => {
         visible:{x:0, transition:{duration:1,delay:0.8}},
     }
     const backgroundImage= {
-        hidden: { x: "100vh" },
-        visible:{x:0, transition:{duration:1,delay:0.8}},
+        hidden: {opacity:0 },
+        visible:{opacity:1, transition:{duration:1.5,delay:0.8}},
     }
 
     
@@ -49,9 +49,9 @@ const HomePage = () => {
         >
 
             <motion.div className="homepage-left"  >
-                <motion.div  variants={intro1} className="text-4xl font-bold mb-3"><img src='welcome.svg' className='w-28 h-28' /> </motion.div>
-                <motion.div variants={intro2} className='text-8xl font-extrabold mb-6' >Leta Asefa</motion.div>
-                <motion.div  variants={intro3}  className='text-4xl mb-6' >
+                <motion.div  variants={intro1}><img src='welcome.svg' className='w-14 h-14 md:w-28 md:h-28' /> </motion.div>
+                <motion.div variants={intro2} className='text-4xl md:text-8xl font-extrabold mb-6' >Leta Asefa</motion.div>
+                <motion.div  variants={intro3}  className='text-2xl md:text-4xl mb-6' >
                     I'm a
                     <Typewriter
                         words={[" Software Developer", " Graphic Designer", " Content Creator",]}
@@ -76,7 +76,7 @@ const HomePage = () => {
 
             <motion.div className="homepage-right">
 
-                <motion.img variants={backgroundImage} src='OpO5.gif' className='mx-auto transofrm scale-x-150  opacity-100 ' />
+                <motion.img variants={backgroundImage} src='OpO5.gif' className='mx-auto transofrm   opacity-100 ' />
 
                 <motion.div className='absolute top-0 left-0 mx-auto w-full'>
 

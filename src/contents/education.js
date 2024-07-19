@@ -8,12 +8,12 @@ const Education = () => {
 
     const { ref: refLeft, inView: inViewLeft } = useInView({
         triggerOnce: false,
-        threshold: 0.3,
+        threshold: 0.2,
     });
 
     const { ref: refRight, inView: inViewRight } = useInView({
         triggerOnce: false,
-        threshold: 0.3,
+        threshold: 0.2,
     });
 
 
@@ -30,33 +30,18 @@ const Education = () => {
     return (
         <motion.div
             id="education"
-            className="pl-5 pr-32 pb-5 pt-16 grid grid-cols-2">
+            className="md:pl-5 md:pr-32 md:pb-5 md:pt-16 gap-24  grid grid-cols-1 md:grid-cols-2">
 
-            <motion.div
-                ref={refLeft}
-                initial={{ opacity:0}}
-                animate={{ opacity: inViewLeft ? 1 : 0}}
-                transition={{ duration: 1.3 }}
-                className="flex ">
-
-                <div className="w-3 h-full bg-primary"></div>
-                <div className="w-3 h-full bg-white"></div>
-                <div className="w-3 h-full bg-secondary"></div>
-                <button onClick={moveleft}><img src="left.svg" className="w-10 hover:scale-110" /></button>
-                <img src={image[index]} className="w-96 cursor-zoom-in rounded-xl" onClick={() => window.open(image[index], '_blank')} />
-                <button onClick={moveright}><img src="right.svg" className="w-10 hover:scale-110" /></button>
-
-            </motion.div>
 
             <motion.div
                 ref={refRight}
-                initial={{ x:-100}}
-                animate={{ x: inViewRight ? 0 : -100 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: inViewRight ? 1 : 0 }}
                 transition={{ duration: 1.3 }}
-                className="relative"
+                className="relative md:pl-20 px-4"
             >
                 <img src="school.svg" className="absolute top-0 left-0 -z-10 opacity-5" />
-                <h1 className="text-secondary bg-primary p-2 rounded-md mb-5 text-5xl font-bold ">EDUCATION</h1>
+                <h1 className="text-gray-800 bg-primary p-2 rounded-md mb-5 text-3xl font-bold ">EDUCATION</h1>
                 <p>These are the schools I learned in</p> <br></br>
                 <p className="flex gap-5 text-2xl"><img src="bullet.svg" className="w-10" /> Misrakber No 1 Primary Schools</p>
                 <p className="flex gap-5 text-2xl"><img src="bullet.svg" className="w-10" /> Beshale Secondary and Preparatory Schools</p>
@@ -69,6 +54,32 @@ const Education = () => {
                 <p className="flex gap-5 text-2xl"><img src="star.svg" className="w-10" />Caleb Curry <a href="https://www.youtube.com/@codebreakthrough/featured"><img src="youtube.svg" className="w-10 hover:scale-110" /> </a></p>
 
             </motion.div>
+
+
+
+
+
+            <motion.div
+                ref={refLeft}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: inViewLeft ? 1 : 0 }}
+                transition={{ duration: 1.3 }}
+                className="flex justify-between">
+
+                <div className="flex justify-between">
+                    <button onClick={moveleft}><img src="left.svg" className="w-10 hover:scale-110" /></button>
+                    <img src={image[index]} className="md:w-96 w-72 cursor-zoom-in rounded-xl" onClick={() => window.open(image[index], '_blank')} />
+                    <button onClick={moveright}><img src="right.svg" className="w-10 hover:scale-110" /></button>
+
+                </div>
+
+                <div className="hidden md:flex  md:visible">
+                    <div className="w-3 h-full bg-gray-800"></div>
+                    <div className="w-3 h-full bg-white"></div>
+                    <div className="w-3 h-full bg-gray-800"></div>
+                </div>
+            </motion.div>
+
 
         </motion.div>
     );
