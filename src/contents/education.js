@@ -43,9 +43,9 @@ const Education = () => {
                 <img src="school.svg" className="absolute top-0 left-0 -z-10 opacity-5" />
                 <h1 className="text-gray-800 bg-primary p-2 rounded-md mb-5 text-3xl font-bold ">EDUCATION</h1>
                 <p>These are the schools I learned in</p> <br></br>
-                <p className="flex gap-5 text-2xl"><img src="bullet.svg" className="w-10" /> Misrakber No 1 Primary Schools</p>
-                <p className="flex gap-5 text-2xl"><img src="bullet.svg" className="w-10" /> Beshale Secondary and Preparatory Schools</p>
-                <p className="flex gap-5 text-2xl"><img src="bullet.svg" className="w-10" />Bahirdar University</p>
+                <p className="flex gap-5 md:text-2xl text-xl"><img src="bullet.svg" className="w-10" /> Misrakber No 1 Primary Schools</p>
+                <p className="flex gap-5 md:text-2xl text-xl"><img src="bullet.svg" className="w-10" /> Beshale Secondary and Preparatory Schools</p>
+                <p className="flex gap-5 md:text-2xl text-xl"><img src="bullet.svg" className="w-10" />Bahirdar University</p>
                 <br></br>
                 <p> Beside formal education taking different online courses and watching youtube tutoiral helped me a lot in my career and here are my GOAT</p>
                 <br></br>

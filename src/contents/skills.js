@@ -36,6 +36,8 @@ const SkillBar = () => {
         threshold: 0.4, // Defines how much of the element is visible before triggering
     });
 
+    
+
 
     return (
         <motion.div id='skill' 

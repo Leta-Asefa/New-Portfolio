@@ -113,7 +113,7 @@ const Contacts = () => {
 
 
             </div>
-            <p className="text-center mt-4 md:px-20 p-4 py-7 bg-primary font-bold flex md:gap-5 gap-2 items-center justify-center">
+            <p className="text-center mt-4 md:px-20 p-4 py-4 bg-primary font-bold flex md:gap-5 gap-2 items-center justify-center">
                 <img src="logo.svg" className="w-10 h-10 inline"></img>
                 <p> &copy; 2024 Leta Asefa (TrendyTech). All rights reserved.</p>
             </p>
