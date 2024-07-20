@@ -94,7 +94,7 @@ const Project = () => {
             <h2 className='flex-none w-96 text-center text-3xl text-secondary pr-3 md:pr-0'>
                 <h1 className='font-bold text-gray-800 bg-primary p-2 rounded-md text-3xl'>PROJECTS</h1>
                 <div className='text-sm mt-5 relative '>
-                    <p className="pr-1">As a Fullstack Developer, I've completed real-world projects and developed various personal and internship projects throughout my career, gaining diverse experience in both professional and personal development environments.</p>
+                    <p className="pr-2">As a Fullstack Developer, I've completed real-world projects and developed various personal and internship projects throughout my career, gaining diverse experience in both professional and personal development environments.</p>
                     <br></br>
                     <img src='projects.gif' className='w-96' />
                     <img src='arrow.gif' className='w-24 absolute bottom-09 right-0' />
