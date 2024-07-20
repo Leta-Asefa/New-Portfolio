@@ -25,7 +25,7 @@ const Experiences = () => {
             
 
             <h1 className='flex-1 text-center text-5xl font-bold text-gray-800  self-baseline'><h1 className='bg-primary p-2 text-3xl rounded-md'>EXPERIENCES</h1><br></br><br></br>
-                <p className='text-sm font-semibold'>I have worked in these companies either as an employee or an inter.</p>
+                <p className='text-sm font-semibold'>I have worked in these companies either as an employee or an intern.</p>
                 <img src='work.png' className='mx-auto rounded-lg w-40' />
             </h1>
             
