@@ -64,7 +64,7 @@ const Education = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: inViewLeft ? 1 : 0 }}
                 transition={{ duration: 1.3 }}
-                className="flex justify-between">
+                className="flex md:justify-between justify-center">
 
                 <div className="flex justify-between">
                     <button onClick={moveleft}><img src="left.svg" className="w-10 hover:scale-110" /></button>
