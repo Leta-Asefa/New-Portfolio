@@ -54,7 +54,7 @@ const HomePage = () => {
                 <motion.div  variants={intro3}  className='text-2xl md:text-4xl mb-6' >
                     I'm a
                     <Typewriter
-                        words={[" Software Developer", " Graphic Designer", " Content Creator",]}
+                        words={[" Software Developer", " Graphic Designer",]}
                         loop={true}
                         cursor
                         cursorStyle='|'
