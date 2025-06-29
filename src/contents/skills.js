@@ -5,25 +5,15 @@ import { useInView } from 'react-intersection-observer';
 const SkillBar = () => {
     const skills = [
         { name: 'Javascript', value: 85 },
-        { name: 'MongoDb', value: 70 },
-        { name: 'Express', value: 80 },
         { name: 'ReactJs', value: 75 },
         { name: 'NodeJs', value: 80 },
-        { name: 'HTML 5', value: 85 },
-        { name: 'CSS 3', value: 70 },
+        { name: 'Express', value: 80 },
+        { name: 'React Native', value: 84 },
+        { name: 'MongoDb', value: 70 },
         { name: 'Tailwindcss', value: 85 },
-        { name: 'Java', value: 84 },
-        { name: 'Springboot', value: 65 },
-        { name: 'Junit', value: 90 },
         { name: 'MySQL', value: 80 },
         { name: 'Git', value: 80 },
-        { name: 'Github', value: 80 },
-        { name: 'Maven', value: 60 },
         { name: 'Vscode', value: 80 },
-        { name: 'Eclipse', value: 80 },
-        { name: 'Photoshop', value: 75 },
-        { name: 'CapCut', value: 65 },
-        { name: 'Design Theory', value: 100 }
     ]
 
     const image = {

@@ -13,7 +13,7 @@ const Contacts = () => {
             link: "https://github.com/Leta-Asefa"
         }, {
             image: "linkedin-svgrepo-com.svg",
-            link: "https://www.linkedin.com/in/leta-asefa/"
+            link: "https://www.linkedin.com/in/leta-asefa-709790359/"
         }, {
             image: "telegram-svgrepo-com.svg",
             link: "https://t.me/letaasefa"
