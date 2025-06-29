@@ -17,7 +17,7 @@ function App() {
       <CallToAction />
       <Project />
       <Experiences />
-      <Education />
+      {/* <Education /> */}
       <Testimonials />
       <Contacts />
      

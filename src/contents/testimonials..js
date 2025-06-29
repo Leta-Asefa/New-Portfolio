@@ -8,17 +8,23 @@ const Testimonials = () => {
         {
             image: 'nati.jpg',
             text: '“Dedicated and curious—never shies away from challenges. A rising star in the tech world!”',
-            name: 'Natinael H/Mariam'
+            name: 'Natinael H/Mariam',
+            linkedin: 'https://www.linkedin.com/in/natenael-haylemariam-020163271/',
+            github:'https://github.com/C5rogers'
         },
         {
             image: 'bura.jpg',
             text: '“Always hungry to learn and quick to grasp new concepts. A valuable asset to any team!”',
-            name: 'Buruk Jeldu'
+            name: 'Buruk Jeldu',
+            linkedin: 'https://www.linkedin.com/in/birukjeldu/',
+            github: 'https://github.com/birukjeldu'
         },
         {
             image: 'niko.jpg',
             text: '“Eager to learn, adaptable, and passionate about coding. A junior developer to watch!”',
-            name: 'Nikodimos Jemaneh'
+            name: 'Nikodimos Jemaneh',
+            linkedin: 'https://www.linkedin.com/in/nikodimos-jemaneh-a1bb71234/',
+            github:'https://github.com/akasaul'
         }
     ];
 
@@ -46,8 +52,8 @@ const Testimonials = () => {
                         <h2 className='text-lg font-semibold'>{testimonial.name}</h2>
                         <h1 className='text-sm'>Software Developer</h1>
                         <div className='flex gap-2 md:justify-start  justify-center items-center'>
-                            <img src='linkedin-svgrepo-com.svg' className='w-8 h-8' />
-                            <img src='github-142-svgrepo-comwhite.svg' className='w-6 h-6' />
+                        <a href={testimonial.linkedin}>   <img src='linkedin-svgrepo-com.svg' className='w-8 h-8' /></a> 
+                          <a href={testimonial.github}> <img src='github-142-svgrepo-comwhite.svg' className='w-6 h-6' /></a> 
                         </div>
                     </div>
                 })}
