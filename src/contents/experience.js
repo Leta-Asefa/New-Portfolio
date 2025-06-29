@@ -24,7 +24,7 @@ const Experiences = () => {
             className="md:flex md:items-center md:justify-between flex-col md:flex-row mt-6 md:p-20 bg-gray-50">
             
 
-            <h1 className='flex-1 text-center text-5xl font-bold text-gray-800  self-baseline'><h1 className='bg-primary p-2 text-3xl rounded-md'>EXPERIENCES</h1><br></br><br></br>
+            <h1 className='flex-1 text-center text-5xl font-bold text-gray-800  self-baseline'><h1 className='bg-gray-800 text-white p-2 text-3xl rounded-md'>EXPERIENCES</h1><br></br><br></br>
                 <p className='text-sm font-semibold'>I have worked in these companies either as an employee or an intern.</p>
                 <img src='work.png' className='mx-auto rounded-lg w-40' />
             </h1>

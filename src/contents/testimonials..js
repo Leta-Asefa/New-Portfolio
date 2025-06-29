@@ -40,9 +40,9 @@ const Testimonials = () => {
             animate={{ opacity: inView ? 1 : 0 }}
             transition={{ duration: 1 }}
             className='bg-gray-900 h-auto mt-10'>
-            <h1 className='text-gray-800 text-center bg-primary p-2 mb-5 text-5xl font-bold '>Testimonials</h1>
+            <h1 className=' text-center bg-gray-900 text-white p-2 py-10 text-5xl font-bold '>Testimonials</h1>
 
-            <div className='md:flex md:justify-between md:px-20 md:py-10 md:gap-8  p-4'>
+            <div className='md:flex md:justify-between md:px-20 md:py-10 md:gap-8  p-4 '>
 
 
                 {testimonials.map((testimonial) => {
